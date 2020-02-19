@@ -30,8 +30,6 @@ for day in days:
     progress.append(present_sum)
     present_sum = compound_calc(present_sum, 0.01, day, 1)
 
-#plt.scatter(days, progress)
-
 def animation_frame(day):
     x_data.append(day)
     y_data.append(progress[day - 1])
